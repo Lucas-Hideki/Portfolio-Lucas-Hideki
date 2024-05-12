@@ -1,0 +1,455 @@
+/* ETILO GERAL - HOME */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Darker Grotesque", sans-serif;  
+}
+
+*::selection {
+    background-color: #672d9d;
+    color: rgb(0, 164, 253);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: #221133;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100%;
+    background-color: #c300ff;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, black, #221133);
+    background-size: cover;
+
+    min-height: 100vh;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 3em;
+    line-height: 40px;
+
+}
+
+h2{
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+}
+
+h4 {
+    background: linear-gradient(350deg, red, blue);
+    margin: 25px;
+    font-size: 2.25em;
+    text-align: center ;
+    text-shadow: none;
+    background-clip: text;
+    color: transparent;
+}
+
+span {
+    color: #9437f2;
+    font-size: 1em;
+
+}
+
+.logo button {
+    background-color: #000;
+    border: none;
+    color: #ff00ff;
+    align-items: center;
+    margin-left: 35px;
+    display: flex;
+    font-size: 35px;
+    cursor: grab;
+}
+.flex{
+    display: flex;
+}
+
+.interface {
+    animation-name: wipeI;
+    animation-duration: 5s;
+    max-width: 2160px;
+    margin: 0px auto;
+
+}
+
+.foto-topo-site img {   
+    position: relative;
+    max-width: 25vw;
+    box-shadow: 0 0 15px #4f009e;
+    opacity: .25;
+    transition: 2s;
+    animation: flutuar 3s linear infinite alternate-reverse;
+}
+
+.foto-topo-site img:hover {   
+    box-shadow: 0 0 55px #4f009e;
+    transition: 2s;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+
+    position: sticky;
+    top: 0;
+    background-image: url(media/Usign-Gradients-Featured-Image.jpg);
+    z-index: 1;
+
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #6b6b6b;
+    text-decoration: none;
+    display: inline-block; /*necessário adicionar para dizer que esse item tem as funcionalidades inline-block*/
+    transition: .3s; 
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.25); /*Essa funcionalidade só serve para itens que são block level e o link é inline level*/
+    
+}
+
+header nav ul{
+    list-style-type: none;
+    
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.5em;
+
+}
+
+.btn-contato a{
+    margin-right: 45px;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: #9437f2;
+    color:#000;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.btn-contato a:hover{
+    box-shadow: 0 0 2px #9537f2;
+    transition: 0.5s;
+    transform:scale(1.1);
+    color: #fff;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    background-image: linear-gradient(to bottom, black, #221133);
+    padding: 25px 2%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: space-around;
+  
+}
+
+img{
+    margin: 20px 20px;
+}
+
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 25px;
+    }
+}
+
+/* ESTILO GERAL ESPECIALIDADES */
+
+section.especialidades {
+    background-image: linear-gradient(to top, black, #221133);
+    padding: 20px;
+}
+
+section.especialidades .flex{
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+.especialidades-box{
+    animation: wipeO 6s;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+.especialidades-box:hover{
+    cursor: auto;
+    box-shadow: 0 0 8px #fff;
+}
+
+.especialidades-box i{
+    margin-left: 2%;
+    color: #9437f2;
+    font-size: 3.5em;
+    display: flex;
+    justify-content: center; 
+}
+
+.especialidades-box:hover i{
+    animation: iconA .5s;
+}
+
+.especialidades-box h3{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.especialidades-box p{
+    font-size: 1.25em;
+   margin-top: 25px;
+   text-align: justify;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 5;
+    }
+    100% {        
+        transform: scale(1);
+        opacity: 0;
+    }    
+}
+
+@keyframes iconA {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes wipeI {
+    
+    from {
+        clip-path: inset(0 0 0 100%);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+    }
+    
+    [transition-style="out:wipe:down"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-out-down both;
+}
+@keyframes wipeO {
+    
+    from {
+        clip-path: inset(0 0 100% 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+    }
+    
+    [transition-style="out:wipe:down"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-out-down both;
+}
+
+/* ESTILO PROJETOS */
+
+section.projetos {
+    padding: 25px;
+    background-image: linear-gradient(to bottom, black, #221133);
+    overflow: hidden;
+}
+
+section.projetos .flex {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+/* PÁGINA HTML PROJETOS - VIDEO*/
+
+
+.video-html-projeto img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 55vw;
+    box-shadow: 0px 0px 15px#9437f2;
+    animation: fadeIn 4s;
+    transition: ease-in-out;
+    opacity: 0.1;
+    cursor: pointer;
+    z-index: 0;
+    transition: 1s;
+}
+
+.video-html-projeto img:hover{
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px#9437f2;
+    transition: 1s;
+    transform: scale(.95);
+    background-color: #fff;
+    border-radius: 5%;
+}
+
+/* FIM PÁGINA HTML PROJETOS - VIDEO*/
+
+/* PÁGINA HTML PROJETOS - PROGRAMAS*/
+
+.videos-programacao-html video {
+    width: 45vw;
+    
+}
+
+@keyframes animate {
+    50%{
+        filter: hue-rotate(350deg);
+        
+    }
+}
+.videos-programacao-automacao video {
+    width: 90vw;
+
+}
+.videos-programacao-automacao video:hover {
+    border-radius: 10px;
+
+    border-color: aliceblue;
+}
+
+
+/* FIM PÁGINA HTML PROJETOS - PROGRAMAS*/
+
+
+
+.img-port {
+    margin-right: 10px;
+    width: calc(30% - 10px); /* Define a largura para 50% da largura do contêiner pai */
+    margin-bottom: 20px; /* Adiciona um espaço entre as imagens */
+    box-sizing: border-box; /* Garante que a largura definida inclua a margem */
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h3.titulo-projetos {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1em;
+}
+
+
+.img-port img{
+    width: 100%;
+    box-shadow: 0px 0px 15px#9437f2;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    opacity: 1;
+
+    
+}
+
+.img-port img:hover {
+    transform: scale(0.95); /* Move a imagem para cima ao passar o mouse sobre o div */
+    opacity: .5;
+}
+
+.btn-voltar button {
+    margin: 25px;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: #9437f2;
+    border: 0;
+    cursor: pointer;
+}
+
+/* ESTILO SOBRE */
+
+section.sobre{
+    background-image: linear-gradient(to top, black, #221133);
+    padding: 25px 2%;
+}
+section.sobre .flex{
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobre .txt-sobre {
+    color:
+    #fff;
+}
+
+.foto-sobre img{
+    max-width: 25vw;
+    border-radius: 10px;
+}
+
+.txt-sobre h2 {
+    text-align: start;
+}
+
+.txt-sobre p {
+    margin: 20px 0;
+    font-size: 1.25em;
+    text-align: justify;
+}
+
+.sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border: #000;
+    border-radius: 50%;
+    background-color: #6a00ff;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 3px 3px 3px #000;
+}
+
+.sobre .btn-social button:hover {
+    transform: scale(1.1);
+    animation: iconA .5s;
+}
