@@ -58,6 +58,65 @@ h4 {
     color: transparent;
 }
 
+.topo-do-site span {
+    line-height: 1.5;
+    color: #9537f2;
+    font-size: 1em;
+    display: inline-block;
+    animation: move 3s ease-in-out infinite;
+    
+}
+
+@keyframes move {
+    0% {
+        color: #fff;
+    }
+    33% {
+
+        color: #c300ff
+    }
+    66% {
+        color: #fff;
+    }
+    99% {
+        color: #c300ff;
+    }
+}
+  .topo-do-site span:nth-child(2) {
+    animation-delay: .1s;
+  }
+  
+  .topo-do-site span:nth-child(3) {
+    animation-delay: .2s;
+  }
+  
+  .topo-do-site span:nth-child(4) {
+    animation-delay: .3s;
+  }
+  
+  .topo-do-site span:nth-child(5) {
+    animation-delay: .4s;
+  }
+  .topo-do-site span:nth-child(6) {
+    animation-delay: .5s;
+  }
+  .topo-do-site span:nth-child(7) {
+    animation-delay: .6s;
+  }
+  .topo-do-site span:nth-child(8) {
+    animation-delay: .7s;
+  }
+  .topo-do-site span:nth-child(9) {
+    animation-delay: .8s;
+  }
+  .topo-do-site span:nth-child(10) {
+    animation-delay: .9s;
+  }
+  .topo-do-site span:nth-child(11) {
+    animation-delay: 1s;
+  }
+  
+  
 span {
     color: #9437f2;
     font-size: 1em;
@@ -174,6 +233,18 @@ section.topo-do-site .flex {
     align-items: center;
     justify-content: space-around;
   
+}
+
+.btn-social-topo button{
+    margin: 60px 4%;
+    width: 75px;
+    height: 75px;
+    border: #000;
+    border-radius: 50%;
+    background-color: #9437f2;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #000;
 }
 
 img{
@@ -437,19 +508,37 @@ section.sobre .flex{
     text-align: justify;
 }
 
-.sobre .btn-social button{
+.btn-social button{
     width: 60px;
     height: 60px;
     border: #000;
     border-radius: 50%;
-    background-color: #6a00ff;
+    background-color: #9437f2;
     font-size: 30px;
     cursor: pointer;
-    margin: 5px;
     box-shadow: 3px 3px 3px #000;
 }
 
-.sobre .btn-social button:hover {
+.btn-social button:hover {
     transform: scale(1.1);
     animation: iconA .5s;
+}
+
+/* ESTILO RODAPÉ */
+footer {
+    padding: 25px 2%;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer p i{
+    color: #9437f2;
+    
+}
+footer .line-footer p a{
+    font-size: 1.75em;
+    color: #9437f2;
+    text-decoration: none;
 }
