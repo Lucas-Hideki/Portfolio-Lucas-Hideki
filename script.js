@@ -1,28 +1,3 @@
-// Ajustar o volume da música para 5%
-var minhaMusica = document.getElementById("minhaMusica");
-minhaMusica.volume = 0.05;
-
-// Função para pausar ou reproduzir a música quando o botão for clicado
-document.addEventListener("DOMContentLoaded", function() {
-    var minhaMusica = document.getElementById("minhaMusica");
-    minhaMusica.volume = 0.05;
-
-    var botaoMusica = document.getElementById('botaoMusica');
-    var iconeMusica = document.getElementById('iconeMusica');
-
-    botaoMusica.addEventListener('click', function() {
-        if (minhaMusica.paused) {
-            minhaMusica.play();
-            iconeMusica.classList.remove('fa-play');
-            iconeMusica.classList.add('fa-pause');
-        } else {
-            minhaMusica.pause();
-            iconeMusica.classList.remove('fa-pause');
-            iconeMusica.classList.add('fa-play');
-        }
-    });
-});
-
 // Função para navegar suavemente para as seções da página ao clicar nos links do menu
 document.addEventListener("DOMContentLoaded", function() {
     // Selecionar todos os links no menu
