@@ -58,6 +58,105 @@ h4 {
     color: transparent;
 }
 
+.flex{
+    display: flex;
+}
+
+.interface {
+    animation-name: wipeI;
+    animation-duration: 5s;
+    max-width: 2160px;
+    margin: 0px auto;
+
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+
+    position: sticky;
+    top: 0;
+    background-image: url(media/Usign-Gradients-Featured-Image.jpg);
+    z-index: 1;
+
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #6b6b6b;
+    text-decoration: none;
+    display: inline-block; /*necessário adicionar para dizer que esse item tem as funcionalidades inline-block*/
+    transition: .3s; 
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.25); /*Essa funcionalidade só serve para itens que são block level e o link é inline level*/
+    
+}
+
+header nav ul{
+    list-style-type: none;
+    
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.5em;
+
+}
+
+.menu-btn button{
+    display: none;
+    color: #672d9d;
+    font-size: 25px;
+    background-color: #000;
+    border: #000;
+}
+
+.btn-contato a{
+    margin-right: 45px;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: #9437f2;
+    color:#000;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.btn-contato a:hover{
+    box-shadow: 0 0 2px #9537f2;
+    transition: 0.5s;
+    transform:scale(1.1);
+    color: #fff;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    background-image: linear-gradient(to bottom, black, #221133);
+    padding: 25px 2%;
+}
+
+
+
+.txt-topo-site {
+    padding: 40px 4%;
+    margin: 20px 2%;
+    width: 800px;
+    height: 350px;
+    align-self: center;
+    align-content: center;
+}
+
 .topo-do-site span {
     line-height: 1.5;
     color: #9537f2;
@@ -123,30 +222,27 @@ span {
 
 }
 
-.logo button {
-    background-color: #000;
-    border: none;
-    color: #ff00ff;
-    align-items: center;
-    margin-left: 35px;
-    display: flex;
-    font-size: 35px;
-    cursor: grab;
-}
-.flex{
-    display: flex;
-}
 
-.interface {
-    animation-name: wipeI;
-    animation-duration: 5s;
-    max-width: 2160px;
-    margin: 0px auto;
 
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border: #000;
+    border-radius: 50%;
+    background-color: #9437f2;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #000;
 }
 
-.foto-topo-site img {   
-    position: relative;
+.btn-social button:hover {
+    transform: scale(1.1);
+    animation: iconA .5s;
+}
+
+
+.foto-topo-site img{
+    margin: 20px 2%;
     max-width: 25vw;
     box-shadow: 0 0 15px #4f009e;
     opacity: .25;
@@ -159,96 +255,6 @@ span {
     transition: 2s;
     opacity: 1;
     border-radius: 50%;
-}
-
-/* ESTILO DO CABEÇALHO */
-header {
-
-    position: sticky;
-    top: 0;
-    background-image: url(media/Usign-Gradients-Featured-Image.jpg);
-    z-index: 1;
-
-}
-
-header > .interface {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header a{
-    color: #6b6b6b;
-    text-decoration: none;
-    display: inline-block; /*necessário adicionar para dizer que esse item tem as funcionalidades inline-block*/
-    transition: .3s; 
-}
-
-header a:hover{
-    color: #fff;
-    transform: scale(1.25); /*Essa funcionalidade só serve para itens que são block level e o link é inline level*/
-    
-}
-
-header nav ul{
-    list-style-type: none;
-    
-}
-
-header nav ul li{
-    display: inline-block;
-    padding: 20px 40px;
-    font-size: 1.5em;
-
-}
-
-.btn-contato a{
-    margin-right: 45px;
-    padding: 10px 40px;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 20px;
-    background-color: #9437f2;
-    color:#000;
-    border: 0;
-    text-decoration: none;
-    cursor: pointer;
-
-}
-
-.btn-contato a:hover{
-    box-shadow: 0 0 2px #9537f2;
-    transition: 0.5s;
-    transform:scale(1.1);
-    color: #fff;
-}
-
-/* ESTILO DO TOPO DO SITE */
-section.topo-do-site{
-    background-image: linear-gradient(to bottom, black, #221133);
-    padding: 25px 2%;
-}
-
-section.topo-do-site .flex {
-    align-items: center;
-    justify-content: space-around;
-  
-}
-
-.btn-social-topo button{
-    margin: 60px 4%;
-    width: 75px;
-    height: 75px;
-    border: #000;
-    border-radius: 50%;
-    background-color: #9437f2;
-    font-size: 30px;
-    cursor: pointer;
-    box-shadow: 3px 3px 3px #000;
-}
-
-img{
-    margin: 20px 20px;
 }
 
 
@@ -269,7 +275,6 @@ section.especialidades {
 }
 
 section.especialidades .flex{
-    justify-content: space-around;
     padding: 20px;
 
 }
@@ -499,29 +504,13 @@ section.sobre .flex{
 }
 
 .txt-sobre h2 {
-    text-align: start;
+    text-align: center;
 }
 
 .txt-sobre p {
-    margin: 20px 0;
+    margin: 20px 2%;
     font-size: 1.25em;
     text-align: justify;
-}
-
-.btn-social button{
-    width: 60px;
-    height: 60px;
-    border: #000;
-    border-radius: 50%;
-    background-color: #9437f2;
-    font-size: 30px;
-    cursor: pointer;
-    box-shadow: 3px 3px 3px #000;
-}
-
-.btn-social button:hover {
-    transform: scale(1.1);
-    animation: iconA .5s;
 }
 
 /* ESTILO RODAPÉ */
@@ -541,4 +530,116 @@ footer .line-footer p a{
     font-size: 1.75em;
     color: #9437f2;
     text-decoration: none;
+}
+
+.btn-social-rodape button{
+    color:#fff;
+    width: 60px;
+    height: 60px;
+    border: #000;
+    border-radius: 50%;
+    background-color: #080006;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #9437f2;
+}
+
+@media(max-width:800px) {
+
+    body, section.topo-do-site, section.especialidades, section.projetos ,section.sobre {
+        background-image: none;
+        background-color: #100013;
+        overflow-x: hidden;
+    }
+    
+    header {
+        position: relative;
+    
+    }
+    
+    header > .interface {
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    
+    }
+    
+    h2 {
+        font-size: 2rem;
+    
+    }
+
+    h3 {
+        margin: 10px 25px;
+    }
+    
+    .btn-contato{
+        margin-top: 20px;
+        margin-left: 40px;
+    
+    }
+    
+    .menu-desktop {
+        position: fixed;;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        gap: -10px;        
+    
+    }
+    
+    .topo-do-site .flex  {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .txt-topo-site {  
+        padding: 20px;
+        margin-left: 350px;
+
+    }
+    
+    .btn-social {
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+
+    section.especialidades .flex{
+        padding: 20px;
+        flex-direction: column;
+    }
+
+
+    /* .menu-btn button{
+
+        display: flex;
+        color: #672d9d;
+        font-size: 25px;
+        background-color: #000;
+        border: #000;
+    } */
+    
+
+    section.sobre img {
+        display: none;
+    }
+
+    .btn-social-rodape button{
+        color:#fff;
+        width: 45px;
+        height: 45px;
+        border: #000;
+        border-radius: 50%;
+        background-color: #080006;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 3px 3px 3px #9437f2;
+    }
 }
