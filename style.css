@@ -694,4 +694,9 @@ footer .line-footer p a{
         box-shadow: 3px 3px 3px #9437f2;
     }
 
+    footer .line-footer p a{
+        font-size: 1em;
+        color: #9437f2;
+        text-decoration: none;
+    }
 } 
