@@ -374,9 +374,10 @@ section.projetos {
 }
 
 section.projetos .flex {
-    display: flex;
-    justify-content: space-around;
+    padding: 100px;
+    margin: 0;
     margin-top: 40px;
+    justify-content: space-around;
 }
 /* PÁGINA HTML PROJETOS - VIDEO*/
 
@@ -386,7 +387,7 @@ section.projetos .flex {
     align-items: center;
     justify-content: center;
     height: auto;
-    width: 55vw;
+    width: 45vw;
     box-shadow: 0px 0px 15px#9437f2;
     animation: fadeIn 4s;
     transition: ease-in-out;
@@ -457,13 +458,12 @@ h3.titulo-projetos {
 
 
 .img-port img{
-    width: 100%;
+    width: 25vw;
     box-shadow: 0px 0px 15px#9437f2;
     cursor: pointer;
     transition: transform 0.5s ease;
     opacity: 1;
 
-    
 }
 
 .img-port img:hover {
@@ -472,7 +472,7 @@ h3.titulo-projetos {
 }
 
 .btn-voltar button {
-    margin: 25px;
+    margin: 10px;
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -508,7 +508,7 @@ section.sobre .flex{
 }
 
 .txt-sobre p {
-    margin: 20px 2%;
+    margin: 25px;
     font-size: 1.25em;
     text-align: justify;
 }
@@ -623,21 +623,29 @@ footer .line-footer p a{
     
     }
     section.projetos .flex {
-        display: flex;
-        padding: 0;
+        
+        padding: 100px;
         margin: 0;
-        width: 100vw;
+        margin-top: 40px;
+        justify-content: space-around;
+    }
+    .img-port {
+        width: 100%; /* Define a largura para 50% da largura do contêiner pai */
+        margin: 0; /* Adiciona um espaço entre as imagens */
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
     }
 
-
-    /* .menu-btn button{
-
-        display: flex;
-        color: #672d9d;
-        font-size: 25px;
-        background-color: #000;
-        border: #000;
-    } */
+    .img-port img{
+        padding: 0;
+        margin: 0;
+        box-shadow: 0px 0px 15px#9437f2;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+        opacity: 1;
+    
+    }
     
 
     section.sobre img {
@@ -661,15 +669,6 @@ footer .line-footer p a{
     h1 {
         font-size: 2rem;
     
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    
-    }
-
-    h3 {
-        margin: 5px 15px;
     }
 
     .txt-topo-site {  
