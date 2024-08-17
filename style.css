@@ -616,6 +616,19 @@ footer .line-footer p a{
         flex-direction: column;
     }
 
+    .projetos .flex  {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    section.projetos .flex {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+    }
+
 
     /* .menu-btn button{
 
@@ -643,3 +656,42 @@ footer .line-footer p a{
         box-shadow: 3px 3px 3px #9437f2;
     }
 }
+
+@media(max-width:450px) {
+    h1 {
+        font-size: 2rem;
+    
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    
+    }
+
+    h3 {
+        margin: 5px 15px;
+    }
+
+    .txt-topo-site {  
+        
+        padding-left: 35px;
+        margin-left: 400px;
+
+    }
+
+    .btn-social {
+        margin-left: 75px;
+    }
+    .btn-social-rodape button{
+        color:#fff;
+        width: 25px;
+        height: 25px;
+        border: #000;
+        border-radius: 50%;
+        background-color: #080006;
+        font-size: 15px;
+        cursor: pointer;
+        box-shadow: 3px 3px 3px #9437f2;
+    }
+
+} 
