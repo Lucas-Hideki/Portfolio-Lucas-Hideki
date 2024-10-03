@@ -380,7 +380,9 @@ section.projetos .flex {
     justify-content: space-around;
 }
 /* PÁGINA HTML PROJETOS - VIDEO*/
-
+.video-html-projeto h3 {
+    color: #fff;
+}
 
 .video-html-projeto img{
     display: flex;
